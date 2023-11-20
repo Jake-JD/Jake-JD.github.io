@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Alarm</title>
+</head>
+<body>
+    <header class="grid">
+        <!-- 
+    
+        ｡◕‿‿◕｡ 🗲 
+
+        -->
+        <h1 id="topT">Coding Website</h1>
+        <nav>
+            <a class="underline" href="/#topT">Home</a>
+            <a class="underline" href="/#prj">Projects</a>
+            <a class="underline" href="/#contactPage">Contact</a>
+        </nav>
+    </header>
+    <main class="grid">
+        <h1 id = "topTitle">Set Alarm</h1>
+        <div class="choices">
+            <select>
+                <option value="Hour" selected hidden>Hour</option>
+            </select>
+        </div>
+        <div class="choices">
+            <select>
+                <option value="Minute" selected hidden>Minute</option>
+            </select>
+        </div>
+        <div class="choices">
+            <select>
+                <option value="AM/PM" selected hidden>AM/PM</option> 
+            </select>
+        </div>
+        <div class="setAlrm">
+            <button id = "setTheAlarmButton">Set Alarm</button>
+        </div>
+        <div class="bigTime">
+            <h1 class="clockTimerH1">00:00:00</h1>
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>

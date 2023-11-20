@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Varela+Round&display=swap');
+
+body
+{
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    background: #000f13;
+    color: #fff;
+    /* display: grid; */
+}
+
+header
+{
+    padding: 20px 40px;
+    background: blueviolet;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+}
+
+
+header h1
+{
+    grid-column: span 6;
+}
+
+header nav
+{
+    grid-column: 7 / span 6;
+    justify-self: right;
+}
+
+header nav a
+{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+/* START UNDERLINE EFFECTS */
+.underline
+{
+    display: inline-block;
+    padding-bottom: 1px;
+    position: relative;
+}
+.underline::before
+{
+    content: "";
+    position: absolute;
+    /* left: 0; */
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, #00ff00, #00ffff);
+    background-color: #00ff00;
+    transition: width 0.25s ease-out;
+}
+.underline:hover::before
+{
+    width: 100%;
+    left: 0;
+    /* right: 0; */
+    right: auto;
+}
+/* END UNDERLINE EFFECTS */
+
+main
+{
+    padding: 20px;
+    margin: 60px auto;
+    max-width: 1400px;
+}
+
+main #topTitle
+{
+    /* margin-top: 10px; */
+    font-size: 60px;
+    grid-column: span 12;
+    text-align: center;
+}
+
+.srchCryp
+{
+    grid-column: span 4;
+    text-align: center;
+    align-items: center;
+    /* margin-bottom: 0px; */
+}
+
+.srchCryp p
+{
+    font-size: 26px;
+    margin-bottom: 0px;
+}
+
+.srchCryp input
+{
+    margin-right: 10px;
+    font-size: 18px;
+    height: 30px;
+}
+
+
+.srchCryp .buttonInfo_min
+{
+    padding: 0px;
+    margin-top: 0px;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+}
+
+.srchCryp button
+{
+    border: 2px solid #83E22B;
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #83E22B;
+    color: #fff;
+    transition: 0.6s;
+}
+
+.srchCryp button:hover
+{
+    box-shadow: 6px 6px #6AC01A;
+    transition: 0.6s;
+}
+
+.clr
+{
+    /* display: grid; */
+    align-items: center;
+    grid-column: span 12;
+    text-align: center;
+}
+
+.clr button
+{
+    border: 2px solid #83E22B;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #83E22B;
+    color: #fff;
+    transition: 0.6s;
+}
+
+.clr button:hover
+{
+    box-shadow: 6px 6px #6AC01A;
+    transition: 0.6s;
+}
+
+#dataOutput
+{
+    /* padding: 10px; */
+    /* background: #00ff00; */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    grid-column: span 12;
+}
+
+.cardContainer
+{
+    align-items: center;
+    grid-column: span 3;
+    width: 300px;
+    /* height: 500px; */
+    height: 200px;
+    background: #8a2be2;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.cardContainer h2
+{
+    /* color: #83E22B; */
+    color: #fff;
+    font-size: 35px;
+}

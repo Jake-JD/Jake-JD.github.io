@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Varela+Round&display=swap');
+
+body
+{
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    background-color: #000f13;
+    
+}
+
+header
+{
+    padding: 20px 40px;
+    background: #8a2be2;
+    align-items: center;
+}
+
+
+
+header h1
+{
+    color: #fff;
+    /* grid-column: 1/7; */
+    grid-column: span 6;
+}
+
+header nav
+{
+    grid-column: 7 / span 6;
+    justify-self: right;
+}
+
+header nav a
+{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+/* START UNDERLINE EFFECTS */
+.underline
+{
+    display: inline-block;
+    padding-bottom: 1px;
+    position: relative;
+}
+.underline::before
+{
+    content: "";
+    position: absolute;
+    /* left: 0; */
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, #00ff00, #00ffff);
+    background-color: #00ff00;
+    transition: width 0.25s ease-out;
+}
+.underline:hover::before
+{
+    width: 100%;
+    left: 0;
+    /* right: 0; */
+    right: auto;
+}
+/* END UNDERLINE EFFECTS */
+main
+{
+    padding: 20px;
+    margin: 60px auto;
+    max-width: 1400px
+}
+
+
+button
+{
+    font-size: 80px;
+    height: 450px;
+    width: 450px;
+    cursor: pointer;
+}
+button:active
+{
+    
+    border-color: aqua;
+    border-width: 10px;
+}
+/* undo the styling below to make the button disabled effect disappear */
+/* button:disabled
+{
+    color: unset;
+} */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    /* row-gap: 5px; */
+}
+
+.left
+{
+    align-items: center;
+    grid-column: 3 / span 4;
+}
+
+.right
+{
+    padding: 0px;
+    align-items: center;
+    grid-column: 7 / span 4;
+}
+
+#btnRed
+{
+    background-color: red;
+}
+
+#btnBlue
+{
+    background-color: blue;
+}
+
+#btnYellow
+{
+    background-color: yellow;
+}
+
+#btnGreen
+{
+    background-color: green;
+}
+
+.scoreboard
+{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    grid-column: span 12;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.record
+{
+    font-size: 40px;
+    /* background-color: aqua; */
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    grid-column: 3 / span 4;
+}
+
+.record1
+{
+    /* background-color: aqua; */
+    text-align: center;
+    align-items: center;
+    grid-column: 7 / span 4;
+}
+
+.record1 button
+{
+    font-size: 30px;
+    height: 60px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.record2
+{
+    font-size: 20px;
+    grid-column: span 12;
+}
+
+.record2 a
+{
+    color: #00ffff;
+    text-decoration: none;
+}
+
+.record2 a:visited
+{
+    color: #00ffff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1369px) {
+    button
+    {
+    font-size: 70px;
+    height: 350px;
+    width: 350px;
+    
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    button
+    {
+    
+    height: 300px;
+    width: 300px;
+    
+    }
+}
+
+@media screen and (max-width: 920px) {
+    button
+    {
+    height: 250px;
+    width: 250px;
+    
+    }
+}
+
+@media screen and (max-width: 775px) {
+    button
+    {
+        font-size: 50px;
+        height: 200px;
+        width: 200px;
+        
+    }
+    .record
+    {
+        font-size: 30px;
+        
+    }
+    header h1
+    {
+        margin: 0;
+        text-align: center;
+        align-self: center;
+        grid-column: span 12;
+    }
+    header nav
+    {
+        grid-column: span 12;
+        text-align: center;
+        justify-self: center;
+    } 
+    header #removeLeft
+    {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    button
+    {
+        font-size: 30px;
+        height: 150px;
+        width: 150px;
+    }
+    .record
+    {
+        font-size: 15px;
+    }
+
+    .record1 button
+    {
+    font-size: 15px;
+    height: 30px;
+    width: 100px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    button
+    {
+        font-size: 30px;
+        height: 120px;
+        width: 120px;
+    }
+    .grid
+    {
+        row-gap: 5px;
+    }
+}

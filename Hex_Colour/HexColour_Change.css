@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Varela+Round&display=swap');
+
+body
+{
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    background: #000f13;
+    color: #fff;
+}
+
+header
+{
+    padding: 20px 0px;
+    /* background-color: #8a2be2; */
+    align-items: center;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+}
+
+
+header h1
+{
+    padding-left: 20px;
+    /* grid-column: 1/7; */
+    grid-column: span 6;
+}
+
+header nav
+{
+    padding-right: 20px;
+    grid-column: 7 / span 6;
+    justify-self: right;
+}
+
+header nav a
+{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+/* START UNDERLINE EFFECTS */
+.underline
+{
+    display: inline-block;
+    padding-bottom: 1px;
+    position: relative;
+}
+.underline::before
+{
+    content: "";
+    position: absolute;
+    /* left: 0; */
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, #00ff00, #00ffff);
+    background-color: #00ff00;
+    transition: width 0.25s ease-out;
+}
+.underline:hover::before
+{
+    width: 100%;
+    left: 0;
+    /* right: 0; */
+    right: auto;
+}
+/* END UNDERLINE EFFECTS */
+
+main
+{
+    padding: 20px;
+    margin: 60px auto;
+    max-width: 1400px;
+}
+
+.container
+{
+    display: grid;
+    margin-top: 100px;
+    text-align: center;
+    grid-column: span 12;
+    align-items: center;
+    justify-content: center;
+}
+.container h2
+{
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+.miniBox
+{
+    align-self: center;
+    text-align: center;
+    max-width: 800px;
+    /* width: 700px; */
+    background-color: #000f13;
+    border-radius: 360px;
+    padding: 20px;
+    
+}
+.miniBox #btn
+{
+    padding: 15px;
+    background: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .miniBox
+    {
+        padding: 40px;
+    }
+}
+
+
+@media screen and (max-width: 698px) {
+
+    .container h2
+    {
+        font-size: 40px;
+    }
+
+    header h1
+    {
+        padding: 0;
+        margin: 0;
+        grid-column: span 12;
+        justify-self: center;
+    }
+    header nav
+    {
+        padding: 0;
+        grid-column: span 12;
+        justify-self: center;
+    }
+}
