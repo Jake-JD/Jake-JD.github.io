@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+/* Intro */
+
+.mainSection {
+    font-family: 'Varela Round', sans-serif;
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    text-align: center;
+    padding-bottom: 5vh;
+    
+}
+
+.mainSection h1 {
+    height: 20vh;
+    grid-column: span 12;
+
+}
+
+section {
+    font-size: 20px;
+    min-height: 50vh;
+}
+
+.intro{
+    grid-column: span 12;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+section a {
+    color: #00ffff;
+    text-decoration: none;
+}
+
+main .topsection a:visited
+{
+    color: #00ffff;
+}
+
+#prj {
+    display: grid;
+    align-items: center; 
+
+}
+
+/* ================================================ */
+
+/* Form */
+
+.outerEmailBox
+{
+    grid-column: span 12;
+    color: #555;
+    
+}
+
+form
+{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.emailBox {
+    height: 50vh;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.emailBox form input,
+.emailBox form textarea {
+    align-self: center;
+    width: 70vw;
+    margin-bottom: 10px;
+    background: #f5f5f5;
+    padding: 10px;
+    outline: none;
+    font-size: 14px;
+    border: none;
+    max-width: 70vw;
+    margin-bottom: 2vh;
+}
+
+.emailBox button {
+    min-width: 100px;
+    margin-top: 2vh;
+    align-self: center;
+    padding: 10px;
+    background: #83E22B;
+    color: #161616;
+    width: 10%;
+    border-radius: 20px;
+    font-size: 14px;
+    border: none;
+}
+
+/* ================================================ */
+
+/* Footer */
+
+footer {
+    grid-column: span 12;
+}
+
+.allIcons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3
+{
+    padding-top: 40px;
+    text-align: center;
+}
+.allIcons img
+{
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+}
+
+/* ================================================ */

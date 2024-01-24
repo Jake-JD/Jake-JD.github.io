@@ -1,0 +1,50 @@
+* {
+    cursor: default;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Cursor */
+
+body:hover > #trailer {
+    opacity: 1;
+}
+
+#trailer {
+    height: 20px;
+    width: 20px;
+    border: 2px solid grey;
+    border-radius: 9999px;
+
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease;
+
+    display: grid;
+    place-items: center;
+}
+
+#trailer:not([data-type=""]) > #trailer-icon {
+    opacity: 1;
+}
+
+#trailer:not([data-type=""]) {
+    border: none;
+    background-color: white;
+}
+
+
+#trailer-icon {
+    font-size: 16px;
+    line-height: 14px;
+    
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+
+/* ============================================================== */
+

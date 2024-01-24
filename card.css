@@ -1,0 +1,120 @@
+:root {
+    --border: rgb(3, 169, 244);
+    
+    --g1: rgb(98, 0, 234);
+    --g2: rgba(98, 0, 234, 0.815);
+    --g3: rgba(98, 0, 234, 0.459);
+
+    --g4: rgb(51, 51, 51);
+    --g5: rgba(51, 51, 51, 0.9);
+    --g6: rgba(51, 51, 51, 0.658);
+}
+
+.card {
+    background-color: rgba(51, 51, 51, 0.9);
+    border-radius: 10px;
+    min-height: 20vh;
+}
+
+.card:nth-child(odd) {
+    opacity: 0;
+    filter: blur(5px);
+    grid-column: 2 / span 6;
+    background: linear-gradient(
+        130deg, 
+        transparent 0% 5%, 
+        var(--g4) 66%, 
+        var(--g5) 83.5%, 
+        var(--g6) 100%
+    );
+    background-size: 150% 150%;
+    transition: background-position 350ms ease, transform 1s ease-out, filter 0.8s ease-out, opacity 1s ease-out;
+    transform: translateX(-100%);
+}
+
+.card:nth-child(odd):hover {
+    background-position: 100% 100%;
+}
+
+
+
+.card:nth-child(even) {
+    opacity: 0;
+    filter: blur(5px);
+    background-color: #7951a9ab;
+
+    grid-column: 6 / span 6;
+
+    background: linear-gradient(
+        130deg, 
+        transparent 0% 5%, 
+        var(--g1) 66%, 
+        var(--g2) 83.5%, 
+        var(--g3) 100%
+    );
+    background-size: 200% 200%;
+    /* transition: all 1s; */
+    transition: background-position 350ms ease, transform 1s ease-out, filter 0.8s ease-out, opacity 1s ease-out;
+    transform: translateX(100%);
+}
+
+.card:nth-child(even):hover {
+    background-position: 100% 100%;
+}
+
+
+
+.insideProject {
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+.card:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.lngp
+{
+    color: rgb(255, 187, 0);
+    /* color: #7851a9; */
+}
+
+
+div .card a {
+    text-decoration: none;
+    color: inherit; 
+    display: inline; 
+}
+
+
+/* animating the cards */
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    /* transform: translateX(0); */
+}
+
+.show:nth-child(even) {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.show:nth-child(odd) {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 800px) {
+    .card:nth-child(odd) {
+        grid-column: 2 / span 10;
+    }
+
+    .card:nth-child(even) {
+        grid-column: 2 / span 10;
+    }
+}
+

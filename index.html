@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./menu.css">
+    <link rel="stylesheet" href="./cursor.css">
+    <link rel="stylesheet" href="./mainBody.css">
+    <link rel="stylesheet" href="./card.css">
+    <link rel="stylesheet" href="./filter.css">
+    <script defer src="./mouse_menu.js"></script>
+    <script defer src="./emailing.js"></script>
+    <script defer src="./observer.js"></script>
+    <script src="./filter.js"></script>
+
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("7MOcUyEuwG68_5eeS");
+        })();
+    </script>
+
+    <title>Jake Davis Test</title>
+</head>
+<body>
+    <div id="trailer">
+        <i id="trailer-icon" class="fa-solid fa-arrow-up-right"><ion-icon name="arrow-redo"></ion-icon></i>
+    </div>
+    <div id="menu">
+        <div id="menu-items" class="interactable" data-type="menuLink">
+            <a href="#topT" class="menu-items">Home</a>
+            <a href="#prj" class="menu-items">Projects</a>
+            <a href="https://github.com/Jake-JD" target=_blank class="menu-items">Github</a>
+            <a href="#contactPage" class="menu-items">Contact Me</a>
+        </div>
+        <div id="menu-background-pattern"></div>
+        <div id="menu-background-image"></div>
+    </div>
+
+    <div id="topT" class="mainSection">
+        <h1>Junior Developer</h1>
+        <section class="intro">
+            <div class="columns">
+                <p>Hello! My name is Jake, I am fluent in English and Spanish. I have had the opportunity to complete a level 3 Infrastructure Technician Apprenticeship (Grade: Distinction), thus gaining valuable experience in my problem solving and troubleshooting skills.</p> 
+                <p>I enjoy working within a team to achieve results. Some coding languages I have studied are Python, JavaScript, HTML, CSS, SQL and Java.
+                    I have also gained the Foundational C# with Microsoft qualification.
+                </p>
+                <p>While you are here please feel free to check my 
+                    <a class="interactable" data-type="hyperlink" href="https://github.com/Jake-JD" target="_blank">Github</a>
+                    , contact me by email (
+                        <a class="interactable" data-type="emailLink" href="mailto:jd.jake02@gmail.com">jd.jake02@gmail.com</a>
+                        ) or check out my <a class="interactable" data-type="downloadLink" href="Jake CV.pdf" download="Jake CV">CV</a>.</p>
+            </div>
+            
+
+            <h1 id="prj">Projects</h1>
+
+        </section>
+
+        
+
+        <div class="card interactable" data-type="cardLink" data-language="Python">
+            <a class="clickProject"  href="https://github.com/Jake-JD/YT_Downloader" target="_blank">
+            <div class="insideProject">
+                <h3>YouTube Video Downloader</h3> 
+                <p class="lngp">Python</p> 
+                <h4>This Python code will allow you choose any YouTube video and install it in the quality you want as a mp4 or download the video as an mp3 for audio only.</h4>
+            </div>  
+            </a> 
+        </div>
+        
+        <div class="card interactable" data-type="cardLink" data-language="Javascript">
+            <a class="clickProject"  href="/CryptoAPI/CryptoAPI.html">
+            <div class="insideProject">
+                <h3>Crypto API</h3> 
+                <p class="lngp">JavaScript</p> 
+                <h4>This uses the Coincap API 2.0 to see the prices and price change of 100 crypto currencies.</h4>
+            </div>  
+            </a> 
+        </div>
+
+
+        <div class="card interactable" data-type="cardLink" data-language="Java, Game">
+            <a class="clickProject"  href="https://github.com/Jake-JD/Naughts_and_Crosses" target="_blank">
+            <div class="insideProject">
+                <h3>Naughts and Crosses</h3> 
+                <p class="lngp">Java</p> 
+                <h4>Naughts and Crosses, otherwise known as Tic Tac Toe made in Java. All the buttons are in the read me file.</h4>
+            </div>  
+            </a> 
+        </div>
+        
+        <div class="card interactable" data-type="cardLink" data-language="Python, Javascript, Game">
+            <a class="clickProject"  href="/mem_game_JS/mem_game_JS.html">
+            <div class="insideProject">
+                <h3>Memory Game</h3> 
+                <p class="lngp">JavaScript Python</p> 
+                <h4>I'm sure you have played a game like this before, but here is a game where you click all the flashing in the correct sequence. Please check my Github for the Python version of this game.</h4>
+            </div>  
+            </a> 
+        </div>
+
+
+        <div class="card interactable" data-type="cardLink" data-language="Javascript">
+            <a class="clickProject"  href="/Alarm/index.html">
+            <div class="insideProject">
+                <h3>Alarm</h3> 
+                <p class="lngp">JavaScript</p> 
+                <h4>A simple alarm made in JavaScript.<br>Choose the time you want and click "Set alarm"<br>The alarm is very loud so please keep that in mind.</h4>
+            </div>  
+            </a> 
+        </div>
+        
+        <div class="card interactable" data-type="cardLink" data-language="Python, Game">
+            <a class="clickProject"  href="https://github.com/Jake-JD/Asteroid_Shooter" target="_blank">
+            <div class="insideProject">
+                <h3>Asteroid Shooter Game</h3> 
+                <p class="lngp">Python</p> 
+                <h4>A Python game made using pygame. You have 3 lives and must shoot down the asteroids heading your way!.</h4>
+            </div>  
+            </a> 
+        </div>
+
+
+        <div class="card interactable" data-type="cardLink" data-language="Python, Game">
+            <a class="clickProject"  href="/Pong/pong.html">
+            <div class="insideProject">
+                <h3>Pong Game</h3> 
+                <p class="lngp">Python</p> 
+                <h4>The classic pong game made using pygame. The first to 5 points wins!</h4>
+            </div>  
+            </a> 
+        </div>
+        
+        <div class="card interactable" data-type="cardLink" data-language="Python">
+            <a class="clickProject"  href="https://github.com/Jake-JD/Japanese_revision_py" target="_blank">
+            <div class="insideProject">
+                <h3>Japanese Revision</h3> 
+                <p class="lngp">Python</p> 
+                <h4>A piece of Python code to test and revise the Japanese language. You will also be able to translate English into Japanese or any other language to english.</h4>
+            </div>  
+            </a> 
+        </div>
+
+
+        <div class="card interactable" data-type="cardLink" data-language="Javascript">
+            <a class="clickProject"  href="/Hex_Colour/Colour_Changes.html">
+            <div class="insideProject">
+                <h3>Colour Generator</h3> 
+                <p class="lngp">JavaScript</p> 
+                <h4>A simple webpage that changes the colour of the page to a random hexadecimal value.</h4>
+            </div>  
+            </a> 
+        </div>
+        
+        <div class="card interactable" data-type="cardLink" data-language="Python">
+            <a class="clickProject"  href="/calculator/calculator.html">
+            <div class="insideProject">
+                <h3>Python Calculator</h3> 
+                <p class="lngp">Python</p> 
+                <h4>A simple calculator using tkinter. It includes the following operations:<br> Add, Subtract, Divide, Multiply, Modulo, X² and Xⁿ.</h4>
+            </div>  
+            </a> 
+        </div>
+
+
+        <div class="card interactable" data-type="cardLink" data-language="Python, SQL">
+            <a class="clickProject"  href="/IMDB/imdb.html">
+            <div class="insideProject">
+                <h3>IMDB Database Manipulation</h3> 
+                <p class="lngp">Python sqlite</p> 
+                <h4>A database of the top 250 shows on IMDB. Here you can read, add, update and delete this table through the Python prompts</h4>
+            </div>  
+            </a> 
+        </div>
+        
+        <div class="outerEmailBox interactable" data-type="emailLink">
+            <div class="emailBox">
+                <form onsubmit="sendMail(); reset(); return false">
+                <form>
+                    <h3 id="contactPage">MESSAGE ME</h3>
+                    <input type="text" id="fullName" placeholder="Your Name" required>
+                    <input type="email" id="email_id" placeholder="Email Address" required>
+                    <textarea id="message" rows="4" placeholder="Message for me"></textarea>
+                    <button>Submit</button> 
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <h3 id="#contactPage">Socials</h3>
+            <div class="allIcons interactable" data-type="hyperlink">
+                <a href="mailto:jd.jake02@gmail.com" target="_blank">
+                    <img src="./gmail-svgrepo-com.svg" alt="gmail">
+                </a>
+                <a href="https://www.linkedin.com/in/jake-davis-555962152/" target="_blank">
+                    <img src="./linkedin-svgrepo-com.svg" alt="linkedin">
+                </a>
+                <a href="https://github.com/Jake-JD" target="_blank">
+                    <img src="./github-mark-white.png" alt="Github">
+                </a>
+            </div>
+        </footer>
+
+    <div id="notification-icon" class="interactable" data-type="filterLink" onclick="toggleNotificationBox()">Filter</div>
+
+    <!-- Notification Box -->
+    <div id="notification-box">
+        <p>What coding languages are you looking for?</p>
+
+        <div id="codingButtons">
+            <button value="Python">Python</button>
+            <button value="Javascript">JavaScript</button>
+            <button value="Java">Java</button>
+            <button value="SQL">SQL</button>
+            <button value="Everything" id="everything-button">Everything</button>
+        </div>
+        
+        <br>
+        <div id="close-btn-div">
+            <button id="close-btn" onclick="toggleNotificationBox()">Close</button>
+        </div>
+        
+    </div>
+
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
